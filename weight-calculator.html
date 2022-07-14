@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Weight Converter</title>
+    <!-- <style>
+        body{
+            background-color: rgb(92, 86, 86);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h3{
+            font-size: 2rem;
+        }
+        .container{
+            width: 80%;
+            text-align: center;
+            margin-right: auto;
+            margin-left: auto;
+
+        }
+        input{
+            width: 250px;
+            padding: 0.65rem;
+            border-radius: 5px;
+        }
+        .gram-board, .kilogram , .ounce, .nan-board{
+            width: 250px;
+            height: 70px;
+            padding: 0.65rem;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: 10px;
+        }
+        .card{
+            border-radius: 10px;
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.6);
+        }
+        .gram-board{
+            background-color: orangered;
+            border-radius: 10px;
+        }
+        .kilogram{
+            background-color: dodgerblue;
+        }
+        .ounce{
+            background-color: greenyellow;
+        }
+        .nan-board{
+            background-color: rgb(38, 197, 197);
+            display: none;
+        }
+    </style> -->
+</head>
+<body>
+    <div class="container">
+        <h3>Weight Converter</h3>
+        <input type="text" id="input" placeholder="Enter the value">
+        <div class="nan-board card">
+            <p>The value you have entered is not a number</p>
+        </div>
+        <div class="overall">
+            <div class="gram-board card">
+                <p>Grams:</p>
+                <div class="gram-output"></div>
+            </div>
+            <div class="kilogram card">
+                <p>Kilograms: </p>
+                <div class="kilo-output"></div>
+            </div>
+            <div class="ounce card">
+                <p>Ounce: </p>
+                <div class="ounce-output"></div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js">
+        // var overall = document.querySelector('.overall');
+        //    overall.style.visibility = 'hidden';  
+        // let input = document.getElementById('input')
+        // input.addEventListener('input',calculate);
+        // function calculate(e){
+        //     let value = e.target.value;
+        //     if( isNaN(value) ){
+        //         overall.style.visibility = 'hidden';  
+        //         let nanBoard = document.querySelector(".nan-board");
+        //         nanBoard.style.display = "block"
+        //         setTimeout(function() {
+        //             nanBoard.style.display = "none";
+        //         },2000);
+                
+                
+        //     }else{
+        //         overall.style.visibility = 'visible';  
+        //         let gramOutput = document.querySelector(".gram-output");
+        //         let kiloOutput = document.querySelector(".kilo-output");
+        //         let ounceOutput = document.querySelector(".ounce-output");
+        //         gramOutput.innerHTML = value/0.0022046;
+        //         kiloOutput.innerHTML = value/2.2046;
+        //         ounceOutput.innerHTML = value*16;
+        //     }
+            
+
+
+        // }
+    </script>
+</body>
+</html>
